@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block img %} 
+<p>{{name}}</p>
+{% endblock %}
+{% block list %}
+<div class="drop-list">
+    <select class="down" name="index">
+        {% for re in resol %}
+            <option value={{loop.index}}>{{re}}</option>
+            
+        {% endfor %}
+    </select>
+</div>
+{% endblock %}
